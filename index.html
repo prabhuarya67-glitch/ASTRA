@@ -33,70 +33,7 @@
 
 
 <body>
-    <!-- ================================================================
-     BLOCK 9: REAL-TIME VISITOR COUNTER
-     Paste: Just after Navbar (top of page, very visible)
-     ================================================================ -->
-<style>
-.astra-visitor-bar {
-  background: #1a1a1a;
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 600;
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid #FDAC53;
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  flex-wrap: wrap;
-}
-.astra-visitor-bar .live-dot {
-  width: 8px; height: 8px;
-  background: #25D366; border-radius: 50%;
-  display: inline-block;
-  animation: liveDot 1.5s infinite;
-}
-@keyframes liveDot {
-  0%,100% { opacity: 1; transform: scale(1); }
-  50%      { opacity: .4; transform: scale(.7); }
-}
-.astra-visitor-bar .v-count {
-  color: #FDAC53; font-weight: 800; font-size: 15px;
-  margin: 0 2px;
-}
-.astra-visitor-bar .v-divider {
-  color: #444; margin: 0 8px;
-}
-@media (max-width: 480px) {
-  .astra-visitor-bar { font-size: 12px; gap: 5px; }
-}
-</style>
- 
-<div class="astra-visitor-bar">
-  <span class="live-dot"></span>
-  <span><span class="v-count" id="visitorCount">0</span> people are viewing this page right now</span>
-  <span class="v-divider">|</span>
-  <span>🔥 <span class="v-count" id="todayCount">0</span> businesses enquired today</span>
-  <span class="v-divider">|</span>
-  <span>Last enquiry: <span class="v-count" id="lastEnquiry">0</span> mins ago</span>
-</div>
-<script>
-(function(){
-  function rand(min,max){ return Math.floor(Math.random()*(max-min+1))+min; }
-  var v=rand(12,38), t=rand(4,9), l=rand(2,18);
-  document.getElementById('visitorCount').textContent=v;
-  document.getElementById('todayCount').textContent=t;
-  document.getElementById('lastEnquiry').textContent=l;
-  setInterval(function(){
-    v=Math.max(8,v+rand(-2,3));
-    document.getElementById('visitorCount').textContent=v;
-  },7000);
-  setInterval(function(){
-    l=Math.max(1,l-1);
-    document.getElementById('lastEnquiry').textContent=l;
-  },60000);
-})();
-</script>
-<!-- END BLOCK 9 -->
+
 
     <!-- Navbar Start -->
     <div class="container-fluid nav-bar p-0">
@@ -180,52 +117,7 @@
      ================================================================ -->
  
  
-<!-- ================================================================
-     BLOCK 1: STATS TICKER BAR
-     Paste: Right after Navbar End, BEFORE Carousel Start
-     ================================================================ -->
-<div class="astra-ticker-bar">
-  <div class="astra-ticker-inner">
-    <span>⭐⭐⭐⭐⭐ 4.9/5 Client Rating</span>
-    <span>50+ Projects Delivered</span>
-    <span> 1M+ Ad Reach Generated</span>
-    <span> 95% Client Satisfaction</span>
-    <span> 20+ Happy Clients</span>
-    <span> Based in  Bangalore, Karnataka</span>
-    <span>⭐⭐⭐⭐⭐ 4.9/5 Client Rating</span>
-    <span> 50+ Projects Delivered</span>
-    <span> 1M+ Ad Reach Generated</span>
-    <span> 95% Client Satisfaction</span>
-  </div>
-</div>
-<style>
-.astra-ticker-bar {
-  background: #131313;
-  color: #FDAC53;
-  padding: 10px 0;
-  overflow: hidden;
-  width: 100%;
-  border-bottom: 2px solid #FDAC53;
-}
-.astra-ticker-inner {
-  display: flex;
-  gap: 60px;
-  white-space: nowrap;
-  animation: tickerScroll 22s linear infinite;
-  width: max-content;
-}
-.astra-ticker-inner span {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  flex-shrink: 0;
-}
-@keyframes tickerScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-</style>
-<!-- END BLOCK 1 -->
+
 
 <!-- ================================================================
      BLOCK 2: CLIENT LOGO MARQUEE

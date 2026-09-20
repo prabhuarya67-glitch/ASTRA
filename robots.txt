@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://astradigitalmarket.in/sitemap.xml
+Sitemap: https://www.astradigitalmarket.in/sitemap.xml
